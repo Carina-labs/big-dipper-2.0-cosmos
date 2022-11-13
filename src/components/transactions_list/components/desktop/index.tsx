@@ -39,6 +39,7 @@ const Desktop: React.FC<TransactionsListState> = ({
 
   const classes = useStyles();
   const { t } = useTranslation('transactions');
+  console.log("txs", transactions);
 
   const items = transactions.map((x) => ({
     block: (
