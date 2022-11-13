@@ -44,7 +44,7 @@ const Mobile: React.FC<TransactionsListState> = ({
     setRowHeight,
   } = useList();
 
-  console.log("txs", transactions);
+  console.log('txs', transactions);
   const items = transactions.map((x) => ({
     block: (
       <Link href={BLOCK_DETAILS(x.height)} passHref>
