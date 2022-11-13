@@ -1,24 +1,24 @@
 {
-  "title": "Desmos Block Explorer",
-  "network": "morpheus-apollo-2",
-  "icon": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/icon.svg?sanitize=true",
+  "title": "Supernova Block Explorer",
+  "network": "nova",
+  "icon": "https://avatars.githubusercontent.com/u/103169444?s=200&v=4",
   "logo": {
-    "default": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/logo.svg?sanitize=true"
+    "default": "https://avatars.githubusercontent.com/u/103169444?s=200&v=4"
   },
   "prefix": {
-    "consensus": "desmosvalcons",
-    "validator": "desmosvaloper",
-    "account": "desmos"
+    "consensus": "novavalcons",
+    "validator": "novavaloper",
+    "account": "nova"
   },
   "genesis": {
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "udaric",
-  "votingPowerTokenUnit": "udaric",
+  "primaryTokenUnit": "unova",
+  "votingPowerTokenUnit": "unova",
   "tokenUnits": {
-    "udaric": {
-      "display": "daric",
+    "unova": {
+      "display": "nova",
       "exponent": 6
     }
   },

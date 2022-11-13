@@ -1,24 +1,24 @@
 {
-  "title": "Desmos Block Explorer",
-  "network": "desmos-mainnet-1",
-  "icon": "/desmos/images/icon.svg",
+  "title": "Supernova Block Explorer",
+  "network": "nova",
+  "icon": "https://avatars.githubusercontent.com/u/103169444?s=200&v=4",
   "logo": {
-    "default": "/desmos/images/logo.svg"
+    "default": "https://avatars.githubusercontent.com/u/103169444?s=200&v=4"
   },
   "prefix": {
-    "consensus": "desmosvalcons",
-    "validator": "desmosvaloper",
-    "account": "desmos"
+    "consensus": "novavalcons",
+    "validator": "novavaloper",
+    "account": "nova"
   },
   "genesis": {
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "udsm",
-  "votingPowerTokenUnit": "udsm",
+  "primaryTokenUnit": "unova",
+  "votingPowerTokenUnit": "unova",
   "tokenUnits": {
-    "udsm": {
-      "display": "dsm",
+    "unova": {
+      "display": "nova",
       "exponent": 6
     }
   },
