@@ -20,6 +20,18 @@
     "unova": {
       "display": "nova",
       "exponent": 6
+    },
+    "snuatom": {
+      "display": "snAtom",
+      "exponent": 18
+    },
+    "snuosmo": {
+      "display": "snOsmo",
+      "exponent": 18
+    },
+    "snujuno": {
+      "display": "snJuno",
+      "exponent": 18
     }
   },
   "extra": {
