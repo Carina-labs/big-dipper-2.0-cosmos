@@ -69,6 +69,42 @@ import MsgGrantAllowance from './msg/feegrant/msg_grant_allowance';
 import MsgRevokeAllowance from './msg/feegrant/msg_revoke_allowance';
 import MsgCreateVestingAccount from './msg/vesting/msg_create_vesting_account';
 import MsgCreatePeriodicVestingAccount from './msg/vesting/msg_create_periodic_vesting_account';
+import MsgClaimSnAsset from './msg/gal/msg_claim_sn_asset';
+import MsgClaimSnAssetResponse from './msg/gal/msg_claim_sn_asset_response';
+import MsgGalDelegate from './msg/gal/msg_delegate';
+import MsgGalDelegateResponse from './msg/gal/msg_delegate_response';
+import MsgGalDeposit from './msg/gal/msg_deposit';
+import MsgGalDepositResponse from './msg/gal/msg_deposit_response';
+import MsgIcaWithdraw from './msg/gal/msg_ica_withdraw';
+import MsgIcaWithdrawResponse from './msg/gal/msg_ica_withdraw_response';
+import MsgPendingUndelegate from './msg/gal/msg_pending_undelegate';
+import MsgPendingUndelegateResponse from './msg/gal/msg_pending_undelegate_response';
+import MsgGalUndelegate from './msg/gal/msg_undelegate';
+import MsgGalUndelegateResponse from './msg/gal/msg_undelegate_response';
+import MsgWithdraw from './msg/gal/msg_withdraw';
+import MsgWithdrawResponse from './msg/gal/msg_withdraw_response';
+import MsgChangeRegisteredZone from './msg/icacontrol/msg_change_registered_zone';
+import MsgChangeRegisteredZoneResponse from './msg/icacontrol/msg_change_registered_zone_response';
+import MsgDeleteRegisteredZone from './msg/icacontrol/msg_delete_registered_zone';
+import MsgDeleteRegisteredZoneResponse from './msg/icacontrol/msg_delete_registered_zone_response';
+import MsgIcaAuthzGrant from './msg/icacontrol/msg_ica_authz_grant';
+import MsgIcaAuthzGrantResponse from './msg/icacontrol/msg_ica_authz_grant_response';
+import MsgIcaAuthzRevoke from './msg/icacontrol/msg_ica_authz_revoke';
+import MsgIcaAuthzRevokeResponse from './msg/icacontrol/msg_ica_authz_revoke_response';
+import MsgIcaAutoStaking from './msg/icacontrol/msg_ica_auto_staking';
+import MsgIcaAutoStakingResponse from './msg/icacontrol/msg_ica_auto_staking_response';
+import MsgIcaDelegate from './msg/icacontrol/msg_ica_delegate';
+import MsgIcaDelegateResponse from './msg/icacontrol/msg_ica_delegate_response';
+import MsgIcaTransfer from './msg/icacontrol/msg_ica_transfer';
+import MsgIcaTransferResponse from './msg/icacontrol/msg_ica_transfer_response';
+import MsgIcaUndelegate from './msg/icacontrol/msg_ica_undelegate';
+import MsgIcaUndelegateResponse from './msg/icacontrol/msg_ica_undelegate_response';
+import MsgRegisterControllerAddress from './msg/icacontrol/msg_register_controller_address';
+import MsgRegisterControllerAddressResponse from './msg/icacontrol/msg_register_controller_address_response';
+import MsgRegisterZone from './msg/icacontrol/msg_register_zone';
+import MsgRegisterZoneResponse from './msg/icacontrol/msg_register_zone_response';
+import MsgRegisterOracleAddr from './msg/oracle/msg_register_oracle_addr';
+import MsgUpdateChainState from './msg/oracle/msg_update_chain_state';
 
 export {
   BigDipperNetwork,
@@ -142,4 +178,50 @@ export {
   MsgRevokeAllowance,
   MsgCreateVestingAccount,
   MsgCreatePeriodicVestingAccount,
+};
+
+// Supernova
+export {
+  MsgClaimSnAsset,
+  MsgClaimSnAssetResponse,
+  MsgGalDelegate,
+  MsgGalDelegateResponse,
+  MsgGalDeposit,
+  MsgGalDepositResponse,
+  MsgIcaWithdraw,
+  MsgIcaWithdrawResponse,
+  MsgPendingUndelegate,
+  MsgPendingUndelegateResponse,
+  MsgGalUndelegate,
+  MsgGalUndelegateResponse,
+  MsgWithdraw,
+  MsgWithdrawResponse,
+};
+
+export {
+  MsgChangeRegisteredZone,
+  MsgChangeRegisteredZoneResponse,
+  MsgDeleteRegisteredZone,
+  MsgDeleteRegisteredZoneResponse,
+  MsgIcaAuthzGrant,
+  MsgIcaAuthzGrantResponse,
+  MsgIcaAuthzRevoke,
+  MsgIcaAuthzRevokeResponse,
+  MsgIcaAutoStaking,
+  MsgIcaAutoStakingResponse,
+  MsgIcaDelegate,
+  MsgIcaDelegateResponse,
+  MsgIcaTransfer,
+  MsgIcaTransferResponse,
+  MsgIcaUndelegate,
+  MsgIcaUndelegateResponse,
+  MsgRegisterControllerAddress,
+  MsgRegisterControllerAddressResponse,
+  MsgRegisterZone,
+  MsgRegisterZoneResponse,
+};
+
+export {
+  MsgRegisterOracleAddr,
+  MsgUpdateChainState,
 };

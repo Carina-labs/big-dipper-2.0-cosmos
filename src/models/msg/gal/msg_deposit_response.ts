@@ -1,7 +1,6 @@
-import * as R from 'ramda';
 import { Categories } from '../types';
 
-class MsgDepositResponse {
+class MsgGalDepositResponse {
   public category: Categories;
   public type: string;
   public receiver: string;
@@ -17,17 +16,17 @@ class MsgDepositResponse {
   }
 
   static fromJson(json: any) {
-    return new MsgDepositResponse({
+    return new MsgGalDepositResponse({
       json,
       type: json['@type'],
       receiver: json.receiver,
       depositor: json.depositor,
       depositedAmount: {
         denom: json?.denom,
-        amount: R.pathOr('0', ['amount'], json),
+        amount: json?.amount,
       },
     });
   }
 }
 
-export default MsgDepositResponse;
+export default MsgGalDepositResponse;

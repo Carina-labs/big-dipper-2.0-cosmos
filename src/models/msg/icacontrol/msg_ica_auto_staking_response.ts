@@ -18,4 +18,3 @@ class MsgIcaAutoStakingResponse {
 }
 
 export default MsgIcaAutoStakingResponse;
-

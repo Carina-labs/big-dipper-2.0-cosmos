@@ -1,7 +1,6 @@
-import * as R from 'ramda';
 import { Categories } from '../types';
 
-class MsgDeposit {
+class MsgGalDeposit {
   public category: Categories;
   public type: string;
   public zoneId: string;
@@ -19,7 +18,7 @@ class MsgDeposit {
   }
 
   static fromJson(json: any) {
-    return new MsgDeposit({
+    return new MsgGalDeposit({
       json,
       type: json['@type'],
       zoneId: json.zone_id,
@@ -33,4 +32,4 @@ class MsgDeposit {
   }
 }
 
-export default MsgDeposit;
+export default MsgGalDeposit;

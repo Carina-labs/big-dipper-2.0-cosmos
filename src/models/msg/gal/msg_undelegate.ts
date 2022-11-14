@@ -1,6 +1,6 @@
 import { Categories } from '../types';
 
-class MsgUndelegate {
+class MsgGalUndelegate {
   public category: Categories;
   public type: string;
   public zoneId: string;
@@ -16,7 +16,7 @@ class MsgUndelegate {
   }
 
   static fromJson(json: any) {
-    return new MsgUndelegate({
+    return new MsgGalUndelegate({
       json,
       type: json['@type'],
       zoneId: json.zone_id,
@@ -26,4 +26,4 @@ class MsgUndelegate {
   }
 }
 
-export default MsgUndelegate;
+export default MsgGalUndelegate;

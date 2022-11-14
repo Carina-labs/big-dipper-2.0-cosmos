@@ -1,6 +1,6 @@
 import { Categories } from '../types';
 
-class MsgDelegateResponse {
+class MsgGalDelegateResponse {
   public category: Categories;
   public type: string;
 
@@ -10,11 +10,11 @@ class MsgDelegateResponse {
   }
 
   static fromJson(json: any) {
-    return new MsgDelegateResponse({
+    return new MsgGalDelegateResponse({
       json,
       type: json['@type'],
     });
   }
 }
 
-export default MsgDelegateResponse;
+export default MsgGalDelegateResponse;
