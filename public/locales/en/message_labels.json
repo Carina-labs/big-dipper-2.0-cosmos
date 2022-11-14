@@ -55,9 +55,4 @@
   "MsgRevokeAllowance": "Revoke Allowance",
   "MsgCreateVestingAccount": "Create Vesting Account",
   "MsgCreatePeriodicVestingAccount": "Create Periodic Vesting Account",
-  "txMsgDeposit": "Supernova Deposit",
-  "txMsgDelegate": "Supernova Delegate",
-  "txMsgClaim": "Supernova Claim",
-  "txMsgUnstake": "Supernova Unstake",
-  "txUpdateChainState": "Oracle Update"
 }
