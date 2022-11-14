@@ -58,11 +58,18 @@ const Desktop: React.FC<TransactionsListState> = ({
         </Typography>
       </Link>
     ),
-    type: (
+    type: x.type === undefined ? (
       <div>
         <Tag
-          // value={x.type[0]}
-          value={x[0]}
+          value="Unknown"
+          theme="six"
+        />
+        {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
+      </div>
+    ) : (
+      <div>
+        <Tag
+          value={x.type[0]}
           theme="six"
         />
         {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
