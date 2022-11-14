@@ -62,10 +62,10 @@ const Mobile: React.FC<TransactionsListState> = ({
         </Typography>
       </Link>
     ),
-    type: x.type === undefined ? (
+    type: 'type' in x ? (
       <div>
         <Tag
-          value="Unknown"
+          value={x.type[0]}
           theme="six"
         />
         {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
@@ -73,7 +73,7 @@ const Mobile: React.FC<TransactionsListState> = ({
     ) : (
       <div>
         <Tag
-          value={x.type[0]}
+          value="Unknown"
           theme="six"
         />
         {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
