@@ -63,21 +63,21 @@ const Mobile: React.FC<TransactionsListState> = ({
       </Link>
     ),
     type: x.type === undefined ? (
-        <div>
-          <Tag
-              value="Unknown"
-              theme="six"
-          />
-          {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
-        </div>
+      <div>
+        <Tag
+          value="Unknown"
+          theme="six"
+        />
+        {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
+      </div>
     ) : (
-        <div>
-          <Tag
-              value={x.type[0]}
-              theme="six"
-          />
-          {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
-        </div>
+      <div>
+        <Tag
+          value={x.type[0]}
+          theme="six"
+        />
+        {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
+      </div>
     ),
     result: (
       <Result success={x.success} />
