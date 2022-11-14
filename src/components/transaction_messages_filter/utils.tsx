@@ -48,5 +48,17 @@ export const getFilterLabels = () => {
       key: 'others',
       display: 'others',
     },
+    {
+      key: 'gal',
+      display: 'gal',
+    },
+    {
+      key: 'icacontrol',
+      display: 'icacontrol',
+    },
+    {
+      key: 'oracle',
+      display: 'oracle',
+    },
   ]);
 };

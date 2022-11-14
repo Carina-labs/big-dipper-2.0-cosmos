@@ -68,6 +68,42 @@ import GrantAllowance from './feegrant/grant_allowance';
 import RevokeAllowance from './feegrant/revoke_allowance';
 import CreateVestingAccount from './vesting/create_vesting_account';
 import CreatePeriodicVestingAccount from './vesting/create_periodic_vesting_account';
+import ChangeRegisteredZone from './icacontrol/change_registered_zone';
+import ChangeRegisteredZoneResponse from './icacontrol/change_registered_zone_response';
+import DeleteRegisteredZone from './icacontrol/delete_registered_zone';
+import DeleteRegisteredZoneResponse from './icacontrol/delete_registered_zone_response';
+import IcaAuthzGrant from './icacontrol/ica_authz_grant';
+import IcaAuthzGrantResponse from './icacontrol/ica_authz_grant_response';
+import IcaAuthzRevoke from './icacontrol/ica_authz_revoke';
+import IcaAuthzRevokeResponse from './icacontrol/ica_authz_revoke_response';
+import IcaAutoStaking from './icacontrol/ica_auto_staking';
+import IcaAutoStakingResponse from './icacontrol/ica_auto_staking_response';
+import IcaDelegate from './icacontrol/ica_delegate';
+import IcaDelegateResponse from './icacontrol/ica_delegate_response';
+import IcaTransfer from './icacontrol/ica_transfer';
+import IcaTransferResponse from './icacontrol/ica_transfer_response';
+import IcaUndelegate from './icacontrol/ica_undelegate';
+import IcaUndelegateResponse from './icacontrol/ica_undelegate_response';
+import RegisterControllerAddress from './icacontrol/register_controller_address';
+import RegisterControllerAddressResponse from './icacontrol/register_controller_address_response';
+import RegisterZone from './icacontrol/register_zone';
+import RegisterZoneResponse from './icacontrol/register_zone_response';
+import RegisterOracleAddress from './oracle/register_oracle_address';
+import UpdateChainState from './oracle/update_chain_state';
+import ClaimSnAsset from './gal/claim_sn_asset';
+import ClaimSnAssetResponse from './gal/claim_sn_asset_response';
+import GalDelegate from './gal/delegate';
+import GalDelegateResponse from './gal/delegate_response';
+import GalDeposit from './gal/deposit';
+import GalDepositResponse from './gal/deposit_response';
+import IcaWithdraw from './gal/ica_withdraw';
+import IcaWithdrawResponse from './gal/ica_withdraw_response';
+import PendingUndelegate from './gal/pending_undelegate';
+import PendingUndelegateResponse from './gal/pending_undelegate_response';
+import GalUndelegate from './gal/undelegate';
+import GalUndelegateResponse from './gal/undelegate_response';
+import GalWithdraw from './gal/withdraw';
+import GalWithdrawResponse from './gal/withdraw_response';
 
 export {
   getMessageModelByType,
@@ -134,4 +170,43 @@ export {
   RevokeAllowance,
   CreateVestingAccount,
   CreatePeriodicVestingAccount,
+};
+
+export {
+  ChangeRegisteredZone,
+  ChangeRegisteredZoneResponse,
+  DeleteRegisteredZone,
+  DeleteRegisteredZoneResponse,
+  IcaAuthzGrant,
+  IcaAuthzGrantResponse,
+  IcaAuthzRevoke,
+  IcaAuthzRevokeResponse,
+  IcaAutoStaking,
+  IcaAutoStakingResponse,
+  IcaDelegate,
+  IcaDelegateResponse,
+  IcaTransfer,
+  IcaTransferResponse,
+  IcaUndelegate,
+  IcaUndelegateResponse,
+  RegisterControllerAddress,
+  RegisterControllerAddressResponse,
+  RegisterZone,
+  RegisterZoneResponse,
+  RegisterOracleAddress,
+  UpdateChainState,
+  ClaimSnAsset,
+  ClaimSnAssetResponse,
+  GalDelegate,
+  GalDelegateResponse,
+  GalDeposit,
+  GalDepositResponse,
+  IcaWithdraw,
+  IcaWithdrawResponse,
+  PendingUndelegate,
+  PendingUndelegateResponse,
+  GalUndelegate,
+  GalUndelegateResponse,
+  GalWithdraw,
+  GalWithdrawResponse,
 };
