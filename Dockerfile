@@ -9,11 +9,11 @@ RUN apk add --no-cache git
 WORKDIR /app
 
 # Add PM2
-RUN yarn add pm2 -g
+RUN npm install pm2 -g
 
 # Installing dependencies
 COPY package*.json ./
-RUN yarn install
+RUN npm install --force
 
 # Copying source files
 COPY . .
@@ -45,7 +45,7 @@ ENV NEXT_PUBLIC_MATOMO_SITE_ID ${NEXT_PUBLIC_MATOMO_SITE_ID}
 ENV SENTRY_DSN ${ENTRY_DSN}
 
 # Building app
-RUN yarn install && yarn build
+RUN npm run build
 EXPOSE ${PORT}
 
 # Running the app

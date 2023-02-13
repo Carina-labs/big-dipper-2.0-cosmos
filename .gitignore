@@ -47,3 +47,5 @@ test.js
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+docker-build.sh

@@ -105,6 +105,8 @@ import MsgRegisterZone from './msg/icacontrol/msg_register_zone';
 import MsgRegisterZoneResponse from './msg/icacontrol/msg_register_zone_response';
 import MsgRegisterOracleAddr from './msg/oracle/msg_register_oracle_addr';
 import MsgUpdateChainState from './msg/oracle/msg_update_chain_state';
+import MsgClaimAllSnAsset from './msg/gal/msg_claim_all_sn_asset';
+import MsgClaimAllSnAssetResponse from './msg/gal/msg_claim_all_sn_asset_response';
 
 export {
   BigDipperNetwork,
@@ -196,6 +198,8 @@ export {
   MsgGalUndelegateResponse,
   MsgWithdraw,
   MsgWithdrawResponse,
+  MsgClaimAllSnAsset,
+  MsgClaimAllSnAssetResponse,
 };
 
 export {

@@ -39,7 +39,7 @@ const Desktop: React.FC<TransactionsListState> = ({
 
   const classes = useStyles();
   const { t } = useTranslation('transactions');
-  console.log('txs', transactions);
+  console.log('txs!!!', transactions);
 
   const items = transactions.map((x) => ({
     block: (
@@ -61,7 +61,7 @@ const Desktop: React.FC<TransactionsListState> = ({
     type: 'type' in x ? (
       <div>
         <Tag
-          value={x.type[0]}
+          value={x.messages.items[0].type}
           theme="six"
         />
         {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}
@@ -69,7 +69,7 @@ const Desktop: React.FC<TransactionsListState> = ({
     ) : (
       <div>
         <Tag
-          value="Unknown"
+          value={x.messages.items[0].type}
           theme="six"
         />
         {(x.messages.count > 1) && (` + ${x.messages.count - 1}`)}

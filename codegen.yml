@@ -2,11 +2,14 @@ overwrite: true
 config:
   # omitOperationSuffix: true
   skipTypeNameForRoot: true
+schema:
+  - https://hasura.dev-supernova.xyz/v1/graphql:
+      headers:
+        'x-hasura-admin-secret': carinaLabs!
 generates:
   ./src/graphql/types/general_types.tsx:
     documents:
       - 'src/graphql/general/*'
-    schema: https://gql.desmos.forbole.com/v1/graphql
     plugins:
       - "typescript"
       - "typescript-operations"
